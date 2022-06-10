@@ -1,0 +1,195 @@
+:root {
+  --main-color : #D8DCDD;
+  --text-color : #333;
+  --heading1 : 40px;
+  --heading2 : 30px;
+  --baseFontSize : 18px;
+  
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color : var(--text-color);
+}
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  font-size: 100%;
+  font-family: 'Noto Serif KR', serif;
+  color : var(--text-color);
+}
+
+
+html,body {
+  height: 100%;
+}
+
+h1 {
+  font-size: var(--heading1);
+}
+
+h2 {
+  font-size: var(--heading2);
+}
+
+#main-header {
+  width: 100%;
+  background-color: white;
+  position: relative;
+  height: 80px;
+}
+
+
+
+#main-header > h1 {
+  position: absolute;
+  top: 10px;
+  left: 40px;
+  bottom: 2px;
+}
+
+#main-header > nav {
+  position: absolute;
+  right: 20px;
+  top: 28px;
+  font-weight: 700;
+}
+
+
+
+#main-header > nav > ul > li {
+  display: inline-block;
+  margin-right: 5em;
+}
+
+
+#main-header > nav a:hover {
+  color: var(--main-color);
+}
+
+
+
+.main {
+  width: 100%;
+  height: calc(100% - 80px);
+  background: #ccc;
+  overflow: hidden;
+}
+
+.main .col {
+  width: calc(100%/4);
+  height: 100%;
+  background-color: #abc;
+  position: relative;
+  float: left;
+}
+
+.main .col h2 {
+  text-align: center;
+  text-shadow: 0 0 5px#000;
+  color: #fff;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top:calc(50% - 109px / 2);
+}
+
+.main .col h2 span {
+  display: block;
+  font-size: small;
+  font-weight: 100;
+}
+
+.btn-link {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  font-family: 'Noto Sans KR', sans-serif;   
+  width: 124px;
+  text-align: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-size: 1rem;
+  position: absolute;
+  bottom: 40%;
+  left: calc(50% - 124px / 2);
+ 
+}
+
+.btn-link:hover, .btn-link:active {
+  background: rgba(250, 250, 250, 0.5);
+  color: var(--text-color);
+}
+
+
+
+/* 첫번째 컬럼 배경 스타일 지정 */
+.main .col:first-child {
+  background-image: url(./img/all.jpg);
+  background-size: cover;
+  background-position: center;
+
+}
+
+.main .col:first-child:hover {
+  background-image: url(./img/allSec.jpg);
+  background-size: cover;
+  background-position: center;
+  
+}
+
+/* 두번째 컬럼 배경 스타일 지정 */
+.main .col:nth-child(2) {
+  background-image: url(./img/beddingBig.jpg);
+  background-size: cover;
+  background-position: center;
+
+}
+
+.main .col:nth-child(2):hover {
+  background-image: url(./img/beddingDetail.jpg);
+  background-size: cover;
+  background-position: center;
+
+}
+
+/* 세번째 컬럼 배경 스타일 지정 */
+.main .col:nth-child(3) {
+  background-image: url(./img/bath.jpg);
+  background-size: cover;
+  background-position: center;
+
+}
+
+.main .col:nth-child(3):hover {
+  background-image: url(./img/bathSec.jpg);
+  background-size: cover;
+  background-position: center;
+
+}
+
+
+/* 마지막 컬럼 배경 스타일 지정 */
+.main .col:last-child {
+  background-image: url(./img/cup.jpg);
+  background-size: cover;
+  background-position: center;
+
+}
+
+.main .col:last-child:hover {
+  background-image: url(./img/perfume.jpg);
+  background-size: cover;
+  background-position: center;
+
+}
